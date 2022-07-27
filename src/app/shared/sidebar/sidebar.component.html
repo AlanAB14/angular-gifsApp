@@ -5,9 +5,9 @@
 
     <hr class="text-light">
     <div class="list-group list-reset">
-      <a href="#"
+      <a href="#" *ngFor="let item of historial"
          class="list-group-item list-group-item-action">
-        Dashboard
+        {{ item | titlecase }}
       </a>
     </div>
 </div>
